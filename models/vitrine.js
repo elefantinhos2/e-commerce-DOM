@@ -28,11 +28,11 @@ class Vitrine  {
                 <img src="${img}" alt="${nome}">
             </figure>
             <div class="${'cardDescricao'}">
-                <button class="${'buttonType'} id="${tipo}">"${tipo}"</button>
-                <h3>"${nome}"</h3>
-                <p>"${descricao}"</p>
-                <p>"${preco}"</p>
-                <button class="buttonCarrinho" id="${id}">Adicionar ao Carrinho</button>
+                <button class=${'buttonType'} id=${tipo}>${tipo}</button>
+                <h3>${nome}</h3>
+                <p>${descricao}</p>
+                <p>${preco}</p>
+                <button class="buttonCarrinho" id=${id}>Adicionar ao Carrinho</button>
             </div>
         `
 
