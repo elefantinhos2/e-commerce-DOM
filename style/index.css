@@ -68,25 +68,20 @@
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1603px;
-    /* gap: 45px; */
     gap: 20px;
 }
 
 .containerListaProdutos {
     width: 968px;
     height: 838px;
-    /* margin: 0 auto; */
-    /* margin-left: 90px; */
     margin-top: 70px;
     box-sizing: border-box;
-    /* border: 1px solid violet; */
 }
 
 .containerListaProdutos ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* padding: 10px; */
     padding: 2.5px;
     gap: 15px;
 }
@@ -94,13 +89,11 @@
 .containerListaProdutos ul li {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     width: 296px;
     height: 408px;
     box-sizing: border-box;
     border: 2px solid #F5F5F5;
-    /* border: 1px solid goldenrod; */
 }
 
 .containerListaProdutos ul li:hover {
@@ -125,7 +118,6 @@
 
     width: 296px;
     height: 254px;
-    /* border: 1px solid blueviolet; */
 }
 
 .buttonType {
@@ -162,7 +154,6 @@
     font-size: 18px;
     line-height: 24px;
     color: #292929;
-    /* border: 1px solid red; */
 }
 
 .cardDescricao p:nth-child(3) {
@@ -175,7 +166,6 @@
     font-size: 14px;
     line-height: 24px;
     color: #242424;
-    /* border: 1px solid green; */
 }
 
 .cardDescricao p:nth-child(4) {
@@ -188,7 +178,6 @@
     font-size: 14px;
     line-height: 16px;
     color: #2E245E;
-    /* border: 1px solid paleturquoise; */
 }
 
 .buttonCarrinho {
@@ -206,4 +195,67 @@
 .buttonCarrinho:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.containerFilter {
+    display: flex;
+    gap: 10px;
+}
+
+.containerFilter input {
+    width: 246px;
+    height: 50px;
+    margin-top: 70px;
+    padding-left: 20px;
+    background: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    box-sizing: border-box;
+}
+
+.containerFilter input:focus {
+    outline: 1.5px solid #37268C;
+}
+
+.containerFilter button {
+    width: 96px;
+    height: 50px;
+
+    margin-top: 70px;
+    margin-right: 28px;
+    color: #FFFFFF;
+    border: none;
+    background: #37268C;
+}
+
+.containerFilter button:hover {
+    cursor: pointer;
+}
+
+.carrinhoHeader {
+    width: 352px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 30px;
+    background: #37268C;
+    border: none;
+}
+.carrinhoHeader h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.containerCarrinhoVazio {
+    width: 352px;
+    min-height: 214px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 82px 95px;
+    gap: 10px;
+    background: #F5F5F5;
 }
