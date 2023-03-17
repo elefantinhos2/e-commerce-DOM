@@ -56,3 +56,19 @@ function interceptarEventoCarrinho(event) {
         }
     }
 }
+
+ul.addEventListener("click", FiltraPorTipoButton)
+
+function FiltraPorTipoButton(event) {
+    
+    const buttonFilter = event.target
+
+    if (buttonFilter.className == 'buttonType') {
+        const tipo = buttonFilter.id
+        const listaVitrine = DataBase.filter((produto) => {
+           return  produto.tipo == tipo
+        })
+        const novaVitrinePrincipal = new Vitrine('.containerListaProdutos ul',listaVitrine)
+        novaVitrinePrincipal.ListaProdutos()
+    }
+}
