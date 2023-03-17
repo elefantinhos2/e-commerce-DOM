@@ -259,3 +259,120 @@
     gap: 10px;
     background: #F5F5F5;
 }
+
+.containerCarrinhoItem {
+    width: 352px;
+    min-height: 214px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
+    background: #F5F5F5;
+}
+
+.containerCarrinho ul h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: #292929;
+}
+
+.containerCarrinho ul h6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #242424;
+}
+
+.containerCarrinho ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+
+    width: 282px;
+    height: 92px;
+}
+
+
+.containerCarrinho ul li:hover {
+    box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.651);
+}
+
+.containerCarrinho ul li figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    
+    width: 88px;
+    height: 92px;
+    
+    background: #FFFFFF;
+}
+
+.containerCarrinho ul li img {
+    width: 88px;
+    height: 67px;
+}
+
+.containerCarrinho ul div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    align-items: center;
+    padding: 0px;
+    gap: 14px;
+
+    width: 176px;
+    height: 92px;
+}
+
+.containerCarrinho ul div h3 {
+    width: 176px;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    /* line-height: 24px; */
+    color: #333333;
+}
+
+.containerCarrinho ul div p {
+    width: 70px;
+    height: 16px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E245E;
+}
+
+.containerCarrinho ul div button {
+    /* width: 115px; */
+    height: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    color: #242424;
+}
+
+.containerCarrinho ul div button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
