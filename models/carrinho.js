@@ -19,10 +19,13 @@ class carrinhoController {
 
     }
     
-    static removerProduto() {
+    static removerProduto(idProduto) {
         
         console.log('remove') //Testando saida da ação remover**
-    
+        const produto = this.carrinho.produtos.findIndex((produto) => produto.id == idProduto)
+        this.carrinho.produtos.splice(produto,1)
+        console.log(this.carrinho.produtos)
+        return this.carrinho.produtos
     }
     
     static removerTodosProdutos() {
