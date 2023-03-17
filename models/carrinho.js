@@ -33,5 +33,23 @@ class carrinhoController {
         console.log('removerTodos') //Testando saida da açaõ removerTodos**
     
     }
+
+    static precoTotal() {
+        this.carrinho.precoTotal = 0
+        const preco = this.carrinho.produtos.forEach((produto) => {
+            const arrayPreco = produto.preco.split(' ')
+            console.log('preço:'+arrayPreco[1])
+            this.carrinho.precoTotal += Number(arrayPreco[1])
+            console.log(this.carrinho.precoTotal)
+        })
+
+        // this.carrinho.precoTotal += Number(preco)
+    }
+
+    static qtdTotal() {
+
+        this.carrinho.qtdProdutos = this.carrinho.produtos.length
+        console.log(this.carrinho.qtdProdutos)
+    }
     
 }
