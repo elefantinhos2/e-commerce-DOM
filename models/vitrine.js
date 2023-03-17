@@ -93,4 +93,33 @@ class Vitrine  {
 
         return div
     }
+
+    listaInfo() {
+
+        this._querySelector.innerHTML = ' '
+       
+        const card = this.cardInfo()
+        console.log(card)
+        console.log(this._querySelector)
+        this._querySelector.appendChild(card)
+        
+        return card
+    }
+
+    cardInfo() {
+        const  div = document.createElement('div')
+        const preco       = carrinhoController.carrinho.precoTotal
+        const qtdProdutos = carrinhoController.carrinho.qtdProdutos 
+        div.innerHTML = `
+            <span>
+                <p>Preço</p>
+                <p>R$ ${preco}</p>
+            </span>
+            <span>
+                <p>Quantidade</p>
+                <p>${qtdProdutos}</p>
+            </span>
+        `
+        return div
+    }
 }
