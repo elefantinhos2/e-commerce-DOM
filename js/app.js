@@ -72,3 +72,27 @@ function FiltraPorTipoButton(event) {
         novaVitrinePrincipal.ListaProdutos()
     }
 }
+
+const ulHeader = document.querySelector('.mainHeader ul')
+ulHeader.addEventListener("click", FiltraPorTipoHeader)
+
+function FiltraPorTipoHeader(event) {
+
+    const linkFilter = event.target
+
+    if (linkFilter.tagName == 'A') {
+        console.log('Oi sou um Link :)')
+        const tipo = linkFilter.className
+
+        if  (tipo == 'Todos') {
+            return vitrinePrincipal.ListaProdutos()
+        }
+
+        const listaVitrine = DataBase.filter((produto) => {
+            return produto.tipo == tipo
+        })
+
+        const novaVitrinePrincipal = new Vitrine('.containerListaProdutos ul',listaVitrine)
+        novaVitrinePrincipal.ListaProdutos()
+    }
+}
