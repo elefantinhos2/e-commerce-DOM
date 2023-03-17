@@ -336,6 +336,30 @@
     height: 92px;
 }
 
+.containerCarrinhoVazio li div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 14px;
+
+    width: 176px;
+    height: 92px;
+}
+
+.containerCarrinhoItem li div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+
+    width: 176px;
+    height: 92px;
+}
+
 .containerCarrinho ul div h3 {
     width: 176px;
     height: 24px;
